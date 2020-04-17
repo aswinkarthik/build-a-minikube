@@ -5,7 +5,7 @@
 kubelet --pod-manifest-path ./manifests/
 
 ## Inspect IP address
-docker inspect <id> | jq '.[0].NetworkSettings'
+    docker inspect <id> | jq '.[0].NetworkSettings'
 docker inspect <id> | jq '.[0].HostConfig | { NetworkMode: .NetworkMode}'
 
 
@@ -13,3 +13,4 @@ docker inspect <id> | jq '.[0].HostConfig | { NetworkMode: .NetworkMode}'
 kubectl version
 kubectl api-resources
 
+kubelet --pod-manifest-path ./manifests/ --kubeconfig /src/kubeconfig.yml

@@ -36,6 +36,6 @@ spec:
   priorityClassName: system-cluster-critical
   volumes:
   - hostPath:
-      path: /root/kubeconfig.yml
+      path: /src/kubeconfig.yml
       type: FileOrCreate
     name: kubeconfig

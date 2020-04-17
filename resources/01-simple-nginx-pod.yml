@@ -9,4 +9,3 @@ spec:
     ports:
     - containerPort: 80
   hostName: k8s-master
-  # hostName: ubuntu-bionic
